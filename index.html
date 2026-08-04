@@ -21,33 +21,49 @@
         .container {
             padding: 20px;
             max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        img {
+        .main-gif {
             max-width: 100%;
             height: auto;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+        .logo {
+            max-width: 120px;
+            margin-top: 20px;
+            border-radius: 0;
+            box-shadow: none;
+        }
         h1 {
             color: #e91e63;
             font-size: 24px;
             margin-top: 20px;
+            margin-bottom: 10px;
         }
         p {
             font-size: 16px;
             line-height: 1.5;
             color: #555;
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Вставити посилання на GIF у src нижче -->
-        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDM1dG1sbDBzNXRoMWJza2h3OGw0dGw0Z2lqNTIyYnRkbnhsZHRpMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/R3dZTEz2SK9UbKPSvb/giphy.gif" alt="Романтична гіфка">
+        <!-- 1. Гіфка зверху -->
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDM1dG1sbDBzNXRoMWJza2h3OGw0dGw0Z2lqNTIyYnRkbnhsZHRpMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/R3dZTEz2SK9UbKPSvb/giphy.gif" alt="Романтична гіфка" class="main-gif">
+        
+        <!-- 2. Заголовок -->
         <h1>Дякуємо, що обираєте нас! ✨</h1>
+        
+        <!-- 3. Текст -->
         <p>Нехай цей день буде наповнений ніжністю, красивими моментами та чудовим настроєм.</p>
- <!-- Додаємо логотип бренду -->
-<img src="logo.png" alt="Квіти ВаВ" style="max-width: 120px; margin-top: 15px; box-shadow: none;">
+        
+        <!-- 4. Логотип у самому низу -->
+        <img src="logo.png" alt="Квіти ВаВ" class="logo">
     </div>
 </body>
 </html>
