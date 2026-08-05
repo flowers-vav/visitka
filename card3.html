@@ -32,7 +32,8 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
         .logo {
-            max-width: 180px;
+            max-width: 160px;
+            width: 100%;
             margin-top: 20px;
             border-radius: 0;
             box-shadow: none;
@@ -49,11 +50,36 @@
             color: #555;
             margin-bottom: 15px;
         }
+        .links-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+        .link-item {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 8px 14px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: 1px solid #ffe0e8;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+        }
+        .link-item:hover {
+            background-color: #e91e63;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 1. Гіфка зверху -->
+        <!-- 1. Гіфка для третьої візитки -->
         <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMThwdWJoaHp5dHBwbDRmZ3QwMnR1M3kxeG1tYWRmaGd1eWRuYzNvZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rXZlyQBNl2QZa/giphy.gif" alt="Романтична гіфка" class="main-gif">
         
         <!-- 2. Заголовок -->
@@ -62,8 +88,14 @@
         <!-- 3. Текст -->
         <p>Найкращі миті створюються з любов'ю. Нехай цей букет нагадує про те, наскільки ви важливі та цінні.</p>
         
-        <!-- 4. Збільшений логотип у самому низу -->
+        <!-- 4. Логотип (160px) -->
         <img src="logo.png" alt="Квіти ВаВ" class="logo">
+
+        <!-- 5. Посилання в один ряд -->
+        <div class="links-row">
+            <a href="https://instagram.com/flowers.vav" target="_blank" class="link-item">Instagram: @flowers.vav</a>
+            <a href="https://vav.com.ua" target="_blank" class="link-item">Сайт: vav.com.ua</a>
+        </div>
     </div>
 </body>
 </html>
